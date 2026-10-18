@@ -1,13 +1,14 @@
 # OCOS Privacy Policy
 
-Effective date: October 12, 2026
+Effective date: October 18, 2026
 
 Developer: Mishchenko Sergei, contact: msi.mail@yandex.ru
 
 ## Summary
 
 OCOS is a VPN client for iPhone that connects to ocserv servers (OpenConnect / AnyConnect protocol). The app does not
-collect user data, does not send it to the developer, and does not share it with third parties. While the VPN is on,
+collect user data, does not send anything to the developer automatically, and does not share data with third parties.
+A diagnostic report reaches the developer only if you create it and send it yourself. While the VPN is on,
 traffic goes only to the server the user specified.
 
 ## Data the app handles
@@ -29,13 +30,26 @@ client version and generic device information. This is required by the protocol 
 the content of the traffic. Tunnel parameters (address, DNS, MTU, traffic counters, last error reason) are shown in the app
 and never leave the device.
 
-**System logs.** Diagnostic messages from the VPN extension are written to the device's system log and are not sent to the
-developer.
+**Diagnostic logs.** To help solve connection problems, the app and its VPN extension keep technical logs on the device:
+connection steps and their timing, VPN states, error codes, network type (Wi-Fi or cellular), reconnection counters and
+the app version, iOS version and device model. The logs do not contain passwords, cookies or other sign-in secrets, user
+names, server addresses, profile names, IP addresses or the content of your traffic: such values are removed or replaced
+before anything is written. The logs are limited in size (old entries are overwritten), are not included in device
+backups and can be deleted at any time in Settings → Diagnostics.
+
+**Diagnostic reports.** Logs never leave the device automatically. If you tap "Send diagnostic report", the app creates a
+ZIP archive, shows its contents and size, and opens the standard iOS share menu; you choose whether to send it and where
+(for example, e-mail or a messenger). A report you send to the developer is used only to diagnose and fix problems with
+the app and is deleted once it is no longer needed for that purpose. The service you use to send it (for example, your
+e-mail or messenger provider) handles the message under its own privacy policy.
+
+**System logs.** Some diagnostic messages are also written to the device's system log. The app does not read or send the
+system log.
 
 ## What the app does not do
 
 - contains no analytics, advertising or crash-reporting services;
-- does not send data to the developer or to third parties;
+- does not send data to the developer or to third parties on its own — a diagnostic report is sent only by you;
 - does not sell, use or disclose any data to third parties for any purpose;
 - does not track the user or use advertising identifiers;
 - does not use traffic for advertising or monetization;
@@ -53,8 +67,9 @@ only for your own server and only if you understand the risk.
 
 ## Deleting data
 
-A profile and its password can be deleted in the app (Configurations → profile → Delete configuration). All data is also
-removed when the app is deleted from the device.
+A profile and its password can be deleted in the app (Configurations → profile → Delete configuration). Diagnostic logs
+can be deleted in Settings → Diagnostics → Clear logs. All data is also removed when the app is deleted from the device.
+To have a diagnostic report you sent deleted earlier, write to the contact address below.
 
 ## Children
 
