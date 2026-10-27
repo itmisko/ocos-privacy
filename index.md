@@ -1,6 +1,6 @@
 # OCOS Privacy Policy
 
-Effective date: October 18, 2026
+Effective date: October 27, 2026
 
 Developer: Mishchenko Sergei, contact: msi.mail@yandex.ru
 
@@ -57,7 +57,7 @@ system log.
 
 ## Open-source components
 
-The app uses OpenConnect (LGPL 2.1), OpenSSL (Apache 2.0) and KCP (MIT). Versions, source links and full license texts are
+The app uses OpenConnect (LGPL 2.1) and OpenSSL (Apache 2.0). Versions, source links and full license texts are
 available in the app: Settings → Legal information and licenses.
 
 ## Security
